@@ -10,7 +10,7 @@
 # limitations under the License.
 
 Pod::Spec.new do |s|
-  s.name = 'SwiftGRPC'
+  s.name = 'viSwiftGRPC'
   s.version = '0.9.1'
   s.license     = { :type => 'Apache License, Version 2.0',
                     :text => <<-LICENSE
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.summary = 'Swift gRPC code generator plugin and runtime library'
   s.homepage = 'https://www.grpc.io'
   s.authors  = { 'The gRPC contributors' => 'grpc-packages@google.com' }
-  s.source = { :git => 'https://github.com/grpc/grpc-swift.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/vudang/viGRPC-Swift.git', :tag => s.version }
 
   s.swift_versions = [4.2]
   s.requires_arc = true
@@ -41,6 +41,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/SwiftGRPC/*.swift', 'Sources/SwiftGRPC/**/*.swift', 'Sources/CgRPC/shim/*.[ch]'
   s.public_header_files = 'Sources/CgRPC/shim/cgrpc.h'
 
-  s.dependency 'gRPC-Core', '~> 1.19.0'
+  s.dependency 'gRPC-Core', '~> 1.21.0'
   s.dependency 'SwiftProtobuf', '~> 1.5.0'
 end
