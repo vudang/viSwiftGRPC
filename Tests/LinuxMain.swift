@@ -20,6 +20,7 @@ import XCTest
 XCTMain([
   // SwiftGRPC
   testCase(gRPCTests.allTests),
+  testCase(AsyncClientTests.allTests),
   testCase(ChannelArgumentTests.allTests),
   testCase(ChannelConnectivityTests.allTests),
   testCase(ChannelShutdownTests.allTests),
@@ -35,6 +36,7 @@ XCTMain([
   testCase(ServerCancellingTests.allTests),
   testCase(ServerTestExample.allTests),
   testCase(SwiftGRPCTests.ServerThrowingTests.allTests),
+  testCase(ServerTests.allTests),
   testCase(ServerTimeoutTests.allTests),
 
   // SwiftGRPCNIO
